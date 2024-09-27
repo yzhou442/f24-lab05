@@ -23,7 +23,7 @@ public interface Shape {
     /**
      * Draws lines to file.
      */
-    default void draw(Writer writer) {
+    default void draw(Writer writer, String format, String filename) {
         try {
             // for (Line line : lines) {
             //     // TODO: what is the purpose of the code there?

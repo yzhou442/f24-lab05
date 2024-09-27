@@ -14,7 +14,6 @@ public class Frogger {
     // Field for task 2. Anything to add/change?
     private final Records records;
     private final FroggerID froggerID;
-    private String firstName, lastName, phoneNumber, zipCode, state, gender;
 
     public Frogger(Road road, int position, Records records, FroggerID froggerID) {
         this.road = road;

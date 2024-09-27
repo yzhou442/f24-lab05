@@ -24,7 +24,7 @@ public class Triangle implements Shape {
     //     };
     // }
     @Override
-    public void draw(Writer writer) {
+    public void draw(Writer writer, String format, String filename) {
         try {
             writer.write();
         } catch (IOException e) {
