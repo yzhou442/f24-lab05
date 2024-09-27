@@ -18,21 +18,22 @@ public interface Shape {
      *
      * @return lines of this shape.
      */
-    Line[] toLines();
+    // Line[] toLines();
 
     /**
      * Draws lines to file.
      */
-    default void draw(Writer writer, Line[] lines) {
+    default void draw(Writer writer) {
         try {
-            for (Line line : lines) {
-                // TODO: what is the purpose of the code there?
-                if (writer instanceof JPEGWriter) {
-                    writer.write(line.toJPEG());
-                } else if (writer instanceof PNGWriter) {
-                    writer.write(line.toPNG());
-                }
-            }
+            // for (Line line : lines) {
+            //     // TODO: what is the purpose of the code there?
+            //     if (writer instanceof JPEGWriter) {
+            //         writer.write(line.toJPEG());
+            //     } else if (writer instanceof PNGWriter) {
+            //         writer.write(line.toPNG());
+            //     }
+            // }
+            writer.write();
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -15,12 +15,20 @@ public class Triangle implements Shape {
         };
     }
 
+    // @Override
+    // public Line[] toLines() {
+    //     return new Line[]{
+    //             new Line(this.points[0], this.points[1]),
+    //             new Line(this.points[1], this.points[2]),
+    //             new Line(this.points[2], this.points[0])
+    //     };
+    // }
     @Override
-    public Line[] toLines() {
-        return new Line[]{
-                new Line(this.points[0], this.points[1]),
-                new Line(this.points[1], this.points[2]),
-                new Line(this.points[2], this.points[0])
-        };
+    public void draw(Writer writer) {
+        try {
+            writer.write();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
